@@ -44,6 +44,8 @@ header{
     color: white;
     background-color: #bfc5d0;
 }
-
+.barraMenu li a:active{
+    background-color: #a1acc1;
+}
 
 
