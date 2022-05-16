@@ -14,6 +14,11 @@ h1{
     width: 50%; height: 30px;
     border-radius: 15px;
     border: solid #fad8f3 2px;
+    font-weight:bold;
+    color: #707887;
+}
+.cajaLextura:focus-visible{
+    border: solid violet;
 }
 .botonAnalizar{
     font-weight: bold;
@@ -26,4 +31,7 @@ h1{
 .botonAnalizar:hover{
     color: white;
     background-color: #bfc5d0;
+}
+.botonAnalizar:active{
+    background-color: #a1acc1;
 }

@@ -40,6 +40,10 @@ header{
     padding: 5px 15px;
     margin: auto 15px 0px 0px;
 }
+.barraMenu li a:hover{
+    color: white;
+    background-color: #bfc5d0;
+}
 
 
 
