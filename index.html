@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="./stilos/analizador.css">
     <title>Analizador Grámatico</title>
 </head>
-<body>
+<body onload="analizar();">
     <header>
-        <div class="titulo"><a href="index.html">Analizador Grámatico</a></div>
+        <div class="titulo"><a href="index.html">Analizador Lexico</a></div>
         <ul class="barraMenu">
-            <li><a href="http://www.cucei.udg.mx/carreras/informatica/sites/default/files/adjuntos/teoria_de_la_computacion_0.pdf">Teoría De La Computación</a></li>
+            <li><a href="http://www.cucei.udg.mx/carreras/informatica/sites/default/files/adjuntos/teoria_de_la_computacion_0.pdf" target="_blank">Teoría De La Computación</a></li>
             <li><a href="./direccionMenu/tecnologias.html">Tecnologías Usadas</a></li>
             <li><a href="./direccionMenu/integrante.html">Integrantes</a></li>
         </ul>
     </header>
     <main>
         <div>
-            <h1>Analizador Grámatico Furro Edition</h1><br><br>
+            <h1>Analizador Lexico Furro Edition</h1><br><br>
             <input type="text" name="Cadena" id="lectorCadena" class="cajaLextura"><br><br>
-            <button class="botonAnalizar">Analizar</button>
+            <button ID="botonAnalizar" onload="analizar()">Analizar</button>
         </div>
-        
     </main>
+    <script href="./Scripts/analizador.js"></script>
 </body>
 </html>

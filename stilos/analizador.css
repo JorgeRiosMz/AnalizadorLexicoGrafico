@@ -21,7 +21,7 @@ h1{
 .cajaLextura:focus-visible{
     border: solid violet;
 }
-.botonAnalizar{
+#botonAnalizar{
     font-weight: bold;
     color:#8E9AAF;
     font-size: 18px;
@@ -30,10 +30,11 @@ h1{
     border: solid #fad8f3 2px;
     box-shadow: 0px 3px #707887;
 }
-.botonAnalizar:hover{
+#botonAnalizar:hover{
     color: white;
     background-color: #bfc5d0;
 }
-.botonAnalizar:active{
+#botonAnalizar:active{
     background-color: #a1acc1;
+    box-shadow: 0px 0px black;
 }

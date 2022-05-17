@@ -1,4 +1,16 @@
+main{
+
+    position: relative;
+    top: 80px;
+    color:#7b8494;
+}
 .imagen{
     max-width: 10%;
     max-height: 10%;
+}
+h1{
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    letter-spacing: 10px;
 }

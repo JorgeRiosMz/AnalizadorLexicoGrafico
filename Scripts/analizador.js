@@ -1,1 +1,3 @@
-//Este es un documento de JavaScript, aquí se puede programar
+function analizar(){
+    alert("Cadena Valida"); 
+}
