@@ -17,6 +17,7 @@ h1{
     font-weight:bold;
     color: #707887;
     box-shadow: 0PX 3PX #707887;
+    text-align: center;
 }
 .cajaLextura:focus-visible{
     border: solid violet;
