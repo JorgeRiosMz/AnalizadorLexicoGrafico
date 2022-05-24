@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#CBC0D3,#DEE2FF) no-repeat 100% fixed;
+    background: linear-gradient(#240046,#10002b) no-repeat 100% fixed;
     font-family: 'Ubuntu', sans-serif;
 }
 header{
@@ -8,18 +8,21 @@ header{
     width: 100%;
     height: 12%;
     padding: 0px;
-    background: #ecdeffa3;
+    background: #3C096C;
 }
 .titulo{
     margin:10px 15px;
 }
 .titulo a{
     text-decoration:overline;
-    color:#4d545e;
+    color:#ebc7ff;
     font-size: 20px;
     font-weight:bold;
     letter-spacing:10px;
-    text-shadow: 3px 2px 2px #a5a8b9;
+    text-shadow: 3px 2px 2px #3C096C;
+}
+.titulo a:hover{
+    color:#f5e2ff;
 }
 .barraMenu{
     font-weight: bold;
@@ -32,18 +35,18 @@ header{
     list-style: none;
 }
 .barraMenu li a{
-    background: #DEE2FF;
-    color: #8E9AAF;
+    background: #f5e2ff;
+    color: #3C096C;
     text-decoration: none;  
-    border: 1px solid #FEEAFA;
+    border: 1px solid #7B2CBF;
     border-radius: 15px;
     padding: 5px 15px;
     margin: auto 15px 0px 0px;
 }
 .barraMenu li a:hover{
-    color: white;
-    background-color: #bfc5d0;
+    color: #f5e2ff;
+    background-color: #240046;
 }
 .barraMenu li a:active{
-    background-color: #a1acc1;
+    background-color: #130322;
 }

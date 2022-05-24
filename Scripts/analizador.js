@@ -2,67 +2,95 @@ var cadenaAnalizada, estados;
 var posicion;
 
 function analizar(){
-    cadenaAnalizada=document.getElementById("lectorCadena").value;
-    posicion=0;
-    q_0();
     estados="";
-    document.getElementById("lectorCadena").value="";}
+    posicion=0;
+    cadenaAnalizada=document.getElementById("lectorCadena").value;
+    q_0();
+    document.getElementById("lectorCadena").value="";
+    document.getElementById("estados").textContent=estados;
+    if(posicion==5){
+       document.getElementById("validacion").textContent="Cadena Valida";
+    }else{
+        document.getElementById("validacion").textContent="Cadena No Valida";
+    }
+}
 
 function q_0(){
-    if(cadenaAnalizada[posicion]=="h"){
+    estados=estados+"q0 ";
+    if(cadenaAnalizada[posicion]=="h"){ 
         q_1();
     }else{
-        q_6();
+        if(cadenaAnalizada[posicion]!=null){
+            q_6();}
     }
-    posicion++;
-    estados= estados+"q0 ";
 }
 function q_1(){
-    if((cadenaAnalizada[posicion]>=0&&cadenaAnalizada<10)||
-        cadenaAnalizada=="A"||"B"||"C"||"D"||"E"||"F"){
-        q_2();
-    }else{
-        q_6();
-    }
+    estados=estados+"q1 ";
     posicion++;
-    estados= estados+"q1 ";
+    if(cadenaAnalizada[posicion]==(
+        "0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F")){
+            q_2();
+    }
+    else{
+        if(cadenaAnalizada[posicion]!=null){
+            q_6();
+        }
+    }
 }
 function q_2(){
-    if((cadenaAnalizada[posicion]>=0&&cadenaAnalizada<10)||
-        cadenaAnalizada=="A"||"B"||"C"||"D"||"E"||"F"){
+    estados=estados+"q2 ";
+    posicion++;
+    if(cadenaAnalizada[posicion]==(
+        "0"||"1"||"2"||"3"||"4"||"5"
+          ||"6"||"7"||"8"||"9"||
+        "A"||"B"||"C"||"D"||"E"||"F")){
         q_3();
     }else{
-        q_6();
+        if(cadenaAnalizada[posicion]!=null){
+            q_6();   
+        }
     }
-    posicion++;
-    estados= estados+"q2 ";
 }
 function q_3(){
-    if((cadenaAnalizada[posicion]>=0&&cadenaAnalizada<10)||
-        cadenaAnalizada=="A"||"B"||"C"||"D"||"E"||"F"){
-        q_2();
-    }else{
-        q_6();
-    }
     posicion++;
     estados=estados+"q3 ";
+    if(cadenaAnalizada[posicion]==(
+        "0"||"1"||"2"||"3"||"4"||"5"
+          ||"6"||"7"||"8"||"9"||
+        "A"||"B"||"C"||"D"||"E"||"F")){
+        q_4();
+    }else{
+        if(cadenaAnalizada[posicion]!=null){
+            q_6();   
+        }
+    }
 }
 function q_4(){
-    if((cadenaAnalizada[posicion]>=0&&cadenaAnalizada<10)||
-        cadenaAnalizada=="A"||"B"||"C"||"D"||"E"||"F"){
-        q_2();
-    }else{
-        q_6();
-    }
     posicion++;
-    estados=estados+"q1 ";
+    estados=estados+"q4 ";
+    if(cadenaAnalizada[posicion]==(
+        "0"||"1"||"2"||"3"||"4"||"5"
+          ||"6"||"7"||"8"||"9"||
+        "A"||"B"||"C"||"D"||"E"||"F")){
+        q_5();
+    }else{
+        if(cadenaAnalizada[posicion]!=null){
+            q_6();   
+        }
+    }
 }
 function q_5(){
-
+    estados=estados+"q5 ";
+    posicion++;
+    if(cadenaAnalizada[posicion]!=null){
+        q_6();
+    }
 }
 
-
-
-function equipo(){
-    alert("Esto lo deje porque ya lo hanía hecho, pero no somos equipo");
+function q_6(){
+    estados=estados+"q6 "
+    posicion++;
+    if(cadenaAnalizada[posicion]!=null){
+        q_6();
+    }
 }
