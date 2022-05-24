@@ -32,6 +32,6 @@
             <label for=""id="estados"></label>
         </div>
     </main>
-    <script src="./Scripts/analizador.js"></script>
+    <script src="./Scripts/analizador.js" ></script>
 </body>
 </html>
