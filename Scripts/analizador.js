@@ -29,11 +29,27 @@ function q_1(){
     estados=estados+"q1 ";
     estadoActual=1;
     posicion++;
-    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
+    if( (cadenaAnalizada[posicion]=="0")||
+        (cadenaAnalizada[posicion]=="1")||
+        (cadenaAnalizada[posicion]=="2")||
+        (cadenaAnalizada[posicion]=="3")||
+        (cadenaAnalizada[posicion]=="4")||
+        (cadenaAnalizada[posicion]=="5")||
+        (cadenaAnalizada[posicion]=="6")||
+        (cadenaAnalizada[posicion]=="7")||
+        (cadenaAnalizada[posicion]=="8")||
+        (cadenaAnalizada[posicion]=="9")||
+        (cadenaAnalizada[posicion]=="A")||
+        (cadenaAnalizada[posicion]=="B")||
+        (cadenaAnalizada[posicion]=="C")||
+        (cadenaAnalizada[posicion]=="D")||
+        (cadenaAnalizada[posicion]=="E")||
+        (cadenaAnalizada[posicion]=="F")
+        ){
             q_2();
     }else{
         if(cadenaAnalizada[posicion]!=null){
-            q_6();
+            q_6();  
         }
     }
 }
@@ -41,7 +57,22 @@ function q_2(){
     estados=estados+"q2 ";
     estadoActual=2;
     posicion++;
-    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
+    if((cadenaAnalizada[posicion]=="0")||
+    (cadenaAnalizada[posicion]=="1")||
+    (cadenaAnalizada[posicion]=="2")||
+    (cadenaAnalizada[posicion]=="3")||
+    (cadenaAnalizada[posicion]=="4")||
+    (cadenaAnalizada[posicion]=="5")||
+    (cadenaAnalizada[posicion]=="6")||
+    (cadenaAnalizada[posicion]=="7")||
+    (cadenaAnalizada[posicion]=="8")||
+    (cadenaAnalizada[posicion]=="9")||
+    (cadenaAnalizada[posicion]=="A")||
+    (cadenaAnalizada[posicion]=="B")||
+    (cadenaAnalizada[posicion]=="C")||
+    (cadenaAnalizada[posicion]=="D")||
+    (cadenaAnalizada[posicion]=="E")||
+    (cadenaAnalizada[posicion]=="F")){
         q_3();
     }else{
         if(cadenaAnalizada[posicion]!=null){
@@ -53,7 +84,22 @@ function q_3(){
     estados=estados+"q3 ";
     estadoActual=3;
     posicion++;
-    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
+    if((cadenaAnalizada[posicion]=="0")||
+    (cadenaAnalizada[posicion]=="1")||
+    (cadenaAnalizada[posicion]=="2")||
+    (cadenaAnalizada[posicion]=="3")||
+    (cadenaAnalizada[posicion]=="4")||
+    (cadenaAnalizada[posicion]=="5")||
+    (cadenaAnalizada[posicion]=="6")||
+    (cadenaAnalizada[posicion]=="7")||
+    (cadenaAnalizada[posicion]=="8")||
+    (cadenaAnalizada[posicion]=="9")||
+    (cadenaAnalizada[posicion]=="A")||
+    (cadenaAnalizada[posicion]=="B")||
+    (cadenaAnalizada[posicion]=="C")||
+    (cadenaAnalizada[posicion]=="D")||
+    (cadenaAnalizada[posicion]=="E")||
+    (cadenaAnalizada[posicion]=="F")){
         q_4();
     }else{
         if(cadenaAnalizada[posicion]!=null){
@@ -65,7 +111,22 @@ function q_4(){
     estados=estados+"q4 ";
     estadoActual=4;
     posicion++;
-    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
+    if((cadenaAnalizada[posicion]=="0")||
+    (cadenaAnalizada[posicion]=="1")||
+    (cadenaAnalizada[posicion]=="2")||
+    (cadenaAnalizada[posicion]=="3")||
+    (cadenaAnalizada[posicion]=="4")||
+    (cadenaAnalizada[posicion]=="5")||
+    (cadenaAnalizada[posicion]=="6")||
+    (cadenaAnalizada[posicion]=="7")||
+    (cadenaAnalizada[posicion]=="8")||
+    (cadenaAnalizada[posicion]=="9")||
+    (cadenaAnalizada[posicion]=="A")||
+    (cadenaAnalizada[posicion]=="B")||
+    (cadenaAnalizada[posicion]=="C")||
+    (cadenaAnalizada[posicion]=="D")||
+    (cadenaAnalizada[posicion]=="E")||
+    (cadenaAnalizada[posicion]=="F")){
         q_5();
     }else{
         if(cadenaAnalizada[posicion]!=null){
