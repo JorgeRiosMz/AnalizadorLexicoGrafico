@@ -66,10 +66,7 @@ function q_4(){
     estados=estados+"q4 ";
     estadoActual=4;
     posicion++;
-    if(cadenaAnalizada[posicion]==(
-        "0"||"1"||"2"||"3"||"4"||"5"
-          ||"6"||"7"||"8"||"9"||
-        "A"||"B"||"C"||"D"||"E"||"F")){
+    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
         q_5();
     }else{
         if(cadenaAnalizada[posicion]!=null){
