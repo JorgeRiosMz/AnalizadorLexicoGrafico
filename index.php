@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Recursos Gráficos/cucei.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./stilos/main.css">
     <link rel="stylesheet" href="./stilos/analizador.css">
@@ -21,7 +22,7 @@
     </header>
     <main>
         <div>
-            <h1>Analizador Lexico By Jorge Rios</h1><br><br>
+            <h1>Analizador Lexico</h1><br><br>
             <input type="text" id="lectorCadena" class="cajaLextura" maxlength="16"><br><br>
             <button ID="botonAnalizar" onclick="analizar()">Analizar</button>
         </div>
