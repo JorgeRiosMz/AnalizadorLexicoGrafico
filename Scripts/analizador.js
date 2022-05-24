@@ -4,7 +4,7 @@ var posicion, estadoActual;
 function analizar(){
     estados="";
     posicion=0;
-    cadenaAnalizada=document.getElementById("lectorCadena").value;
+    cadenaAnalizada=document.getElementById("lectorCadena").value.split("");
     q_0();
     document.getElementById("lectorCadena").value="";
     document.getElementById("estados").textContent=estados;
@@ -29,7 +29,7 @@ function q_1(){
     estados=estados+"q1 ";
     estadoActual=1;
     posicion++;
-    if(cadenaAnalizada[posicion]=='0'||'1'||'2'||'3'||'4'||'5'||'6'||'7'||'8'||'9'||'A'||'B'||'C'||'D'||'E'||'F'){
+    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
             q_2();
     }else{
         if(cadenaAnalizada[posicion]!=null){
@@ -65,7 +65,7 @@ function q_4(){
     estados=estados+"q4 ";
     estadoActual=4;
     posicion++;
-    if(cadenaAnalizada[posicion]==("0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F")){
+    if(cadenaAnalizada[posicion]=="0"||"1"||"2"||"3"||"4"||"5"||"6"||"7"||"8"||"9"||"A"||"B"||"C"||"D"||"E"||"F"){
         q_5();
     }else{
         if(cadenaAnalizada[posicion]!=null){
