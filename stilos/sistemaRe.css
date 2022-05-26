@@ -1,0 +1,48 @@
+body{
+    font-family: 'Minecraft', sans-serif;
+    font-weight: 700cm;
+    color:white;
+    text-decoration-color: black;
+    background: url("/Recursos Gráficos/sisReal/Textura_bloque_de_tierra_Minecraft.jpg");
+}
+header{
+    background: url("/Recursos Gráficos/sisReal/Textura_bloque_de_tierra_Minecraft.jpg");
+}
+
+
+table{
+    position: fixed;
+    left: 5%;
+    bottom: 7%;
+    padding: 0%;
+    border: solid rgba(255, 255, 255, 0.343);
+    color:white;
+}
+table td{
+    width: 150px;
+    font-size: medium;
+}
+table button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+table button:hover{
+    background-color: white;
+}
+table button img{
+    height: 100px;
+}
+
+.zombie{
+    position: fixed;
+    right: 20%;
+    bottom: 28%;
+    width: 20%;    
+}
+.zombie img{
+    width: 100%;
+}
+.zombie #vidaZombie{
+    letter-spacing: 4px;
+    font-size: 30px;
+}

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../Recursos Gráficos/cucei.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
     <link rel="stylesheet" href="../stilos/main.css">
     <link rel="stylesheet" href="../stilos/analizador.css">
+    <link rel="stylesheet" href="../stilos/sistemaRe.css">
     <title>Sistema Real</title>
 </head>
 <body>
@@ -21,8 +22,49 @@
         </ul>
     </header>
     <main>
-        <img src="../Recursos Gráficos/cofre.webp" alt="">
-        
+        <table>
+            <th>Espada</th> <th>Daño</th>
+            <tr>
+                <td><button id="EspMadera">
+                    <img src="../Recursos Gráficos/sisReal/Espada_de_madera.png"alt="piedra"><br>
+                </button></td>
+                <td>
+                    <label>Piedra</label><hr>
+                    <label>Daño: 1</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="EspHierro"   >
+                <img src="../Recursos Gráficos/sisReal/Espada_de_hierro.png"alt="hierro"><br>
+                </button></td>
+                <td>
+                    <label>Hierro</label><hr>
+                    <label>Daño: 2</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="EspDiamante" >
+                <img src="../Recursos Gráficos/sisReal/Espada_de_diamante.png"alt="diamante"><br>
+            </button></td>
+            <td>
+                <label>Diamante</label><hr>
+                <label>Daño: 3</label>
+            </td>
+            </tr>
+            <tr>
+                <td><button id="EspNetherite">
+                    <img src="../Recursos Gráficos/sisReal/Espada_de_netherite.png" alt="netherite">
+                </button></td>
+                <td>
+                    <label>Netherite</label><hr>
+                    <label>Daño: 5</label>
+                </td>
+            </tr>
+        </table>
+        <div class="zombie">
+            <img src="../Recursos Gráficos/sisReal/Cabeza_de_zombi.png" alt="zombie">
+            <label for="" id="vidaZombie">10/10</label>
+        </div>
     </main>
 </body>
 </html>
