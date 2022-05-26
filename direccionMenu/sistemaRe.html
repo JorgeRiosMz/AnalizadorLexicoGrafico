@@ -25,7 +25,7 @@
         <table>
             <th>Espada</th> <th>Daño</th>
             <tr>
-                <td><button id="EspMadera">
+                <td><button id="EspMadera" onclick="atacar(1)">
                     <img src="../Recursos Gráficos/sisReal/Espada_de_madera.png"alt="piedra"><br>
                 </button></td>
                 <td>
@@ -34,7 +34,7 @@
                 </td>
             </tr>
             <tr>
-                <td><button id="EspHierro"   >
+                <td><button id="EspHierro" onclick="atacar(2)">
                 <img src="../Recursos Gráficos/sisReal/Espada_de_hierro.png"alt="hierro"><br>
                 </button></td>
                 <td>
@@ -43,7 +43,7 @@
                 </td>
             </tr>
             <tr>
-                <td><button id="EspDiamante" >
+                <td><button id="EspDiamante" onclick="atacar(3)">
                 <img src="../Recursos Gráficos/sisReal/Espada_de_diamante.png"alt="diamante"><br>
             </button></td>
             <td>
@@ -52,7 +52,7 @@
             </td>
             </tr>
             <tr>
-                <td><button id="EspNetherite">
+                <td><button id="EspNetherite" onclick="atacar(5)">
                     <img src="../Recursos Gráficos/sisReal/Espada_de_netherite.png" alt="netherite">
                 </button></td>
                 <td>
@@ -63,8 +63,14 @@
         </table>
         <div class="zombie">
             <img src="../Recursos Gráficos/sisReal/Cabeza_de_zombi.png" alt="zombie">
-            <label for="" id="vidaZombie">10/10</label>
+            <label id="vidaZombie">10</label>
+            <label id="vidaLimZombie">/10</label>
+        </div>
+        <div id="estadosPas">
+            <label>Estados</label><hr>
+            <label id="Est_Pas"> </label>
         </div>
     </main>
+    <script src="../Scripts/sistemaRe.js"></script>
 </body>
 </html>

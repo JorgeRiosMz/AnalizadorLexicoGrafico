@@ -42,7 +42,7 @@ table button img{
 .zombie img{
     width: 100%;
 }
-.zombie #vidaZombie{
+.zombie label{
     letter-spacing: 4px;
     font-size: 30px;
 }
